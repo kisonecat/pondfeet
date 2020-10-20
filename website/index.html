@@ -21,16 +21,23 @@
     </header>
     <div id="loader"><div class="loader"></div></div>
     <main id="main">
+      <h3>What is this?</h3>
+      <p>With this tooll, you can design a bitmap font by drawing some
+representative glyphs, and then let &ldquo;deep learning&rdquo; fill
+in the rest.</p>
       <h3>How do I use this?</h3>
       <p>Use your mouse to draw characters.  As you draw, look to your
       right.  Being somewhat optimistic, you will see a full character
-      set respond to your stylistic choices.</p>
+	set respond to your stylistic choices.</p>
+      <p>This is somewhat aspirational to say the least&hellip;</p>
       <h3>How does this work?</h3>
-      <p>I downloaded <a href="https://github.com/Tecate/bitmap-fonts">a large collection of bitmap fonts</a> and then trained a neural network in <a href="https://pytorch.org/">PyTorch</a> to predict missing glyphs, given the shapes of the glyphs you provide.</p>
+      <p>I downloaded <a href="https://github.com/Tecate/bitmap-fonts">a large collection of bitmap fonts</a> and then (hastily) trained a neural network in <a href="https://pytorch.org/">PyTorch</a> to predict missing glyphs, given the shapes of the glyphs you provide.  The model gets converted to <a href="https://onnx.ai/">ONNX</a> so it can run in the browser via <a href="https://github.com/microsoft/onnxjs">ONNX.js</a>.  There is <a href="https://github.com/kisonecat/pondfeet">code available</a> if you want to find out more.</p>
+      <p>I'd appreciate your ideas on how to improve this.  The design space for small bitmap fonts isn't <em>that</em> large so there are perhaps better ways to explore that space.</p>
     </main>
     <footer>
       <hr/>
-      &copy; 2020, Jim Fowler.
+      <p>&copy; 2020, Jim Fowler.<br/>
+      <a class="email" href="mailto:fowler@math.osu.edu">fowler@math.osu.edu</a></p>
     </footer>
   </body>
 </html>
