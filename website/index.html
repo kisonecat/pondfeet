@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180922501-1"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180922501-1');
+    </script>
+    <title>pondfeet</title>
+    <script src="//cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="main.css#sdf">
+  </head>
+  <body>
+    <header>
+      <h1>pondfeet</h1>
+      <hr/>      
+    </header>
+    <div id="loader"><div class="loader"></div></div>
+    <main id="main">
+      <h3>How do I use this?</h3>
+      <p>Use your mouse to draw characters.  As you draw, look to your
+      right.  Being somewhat optimistic, you will see a full character
+      set respond to your stylistic choices.</p>
+      <h3>How does this work?</h3>
+      <p>I downloaded <a href="https://github.com/Tecate/bitmap-fonts">a large collection of bitmap fonts</a> and then trained a neural network in <a href="https://pytorch.org/">PyTorch</a> to predict missing glyphs, given the shapes of the glyphs you provide.</p>
+    </main>
+    <footer>
+      <hr/>
+      &copy; 2020, Jim Fowler.
+    </footer>
+  </body>
+</html>
